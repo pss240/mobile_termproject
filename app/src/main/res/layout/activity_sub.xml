@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/lay_center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/leftlife"
+            android:layout_width="167dp"
+            android:layout_height="102dp"
+            android:layout_weight="1"
+            android:src="@drawable/life3" />
+
+        <ImageView
+            android:id="@+id/rightlife"
+            android:layout_width="167dp"
+            android:layout_height="102dp"
+            android:layout_weight="1"
+            android:src="@drawable/life3" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ball2"
+            android:visibility="gone"
+            android:id="@+id/iv_ball1"/>
+
+        <ImageView
+            android:id="@+id/iv_ball2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ball2"
+            android:visibility="gone" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#00000000">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:id="@+id/lay_move1"
+    android:background="#00000000">
+
+    <ImageView
+        android:id="@+id/test1"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/right_move"
+        android:translationX="15dp" />
+</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/lay_move2"
+            android:background="#00000000"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/test2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/left_move"
+                android:translationX="-15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
